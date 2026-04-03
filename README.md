@@ -19,7 +19,20 @@ Built a lightning-fast AI Telegram chatbot using Groq API 🚀 Features smart re
 * python-telegram-bot
 * Groq API
 * dotenv
+---
 
+## 🏗️ System Architecture
+
+![Telegram AI Chatbot Architecture](assets/architecture.png)
+
+### Flow Explanation
+
+1. User sends message via Telegram  
+2. Telegram Bot API forwards request to Python Bot  
+3. Bot processes input and retrieves conversation memory  
+4. Request sent to Groq API (LLM)  
+5. AI generates response  
+6. Response sent back to user via Telegram 
 ---
 
 ## 📁 Project Structure
@@ -34,6 +47,8 @@ Telegram-AI-Chatbot-using-Groq-API-Fast-LLM-Memory-Support-/
 ├── requirements.txt
 ├── .env.example
 └── README.md
+├── assets/
+│   └── architecture.png
 ```
 
 ---
